@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Portfólio</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Abrir</a>
+    </header>
+    <nav id="menu">
+      <a href="#" onclick="fecharMenu()"> &times; Fechar</a>
+      <a href="#">Sobre mim</a>
+      <a href="#">Contato</a>
+      <a href="#">Linkedin</a>
+    </nav>
+    <main id="conteudo">
+      <h1>Bem-vindo!<br />Prazer ter você aqui!</h1>
+      <p>Esse é meu portifólio de Projetos...</p>
+    </main>
+
+    <script>
+      function abrirMenu() {
+        document.getElementById("menu").style.width = "250px";
+        document.getElementById("conteudo").style.marginLeft = "250px";
+      }
+
+      function fecharMenu() {
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("conteudo").style.marginLeft = "0px";
+      }
+    </script>
+  </body>
+</html>
